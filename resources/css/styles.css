@@ -15,7 +15,7 @@ ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    gap: 20px;
+    gap: 30px;
 }
 
 img {
@@ -24,18 +24,26 @@ img {
 }
 
 button {
-    border: 1px solid #3829ffd9;
+    border: 1px solid #012626;
     border-radius: 10%;
-    background-color: #3829ffd9;
-    color: whitesmoke;
-    box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+    background-color: #027368;
+    color: white;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.5);
     width: 100px;
     height: 35px;
+    font-weight: 800;
+    margin: 16px 0;
+    transition: all .3s ease-in-out;
 }
 
 a {
     text-decoration: none;
     color: inherit;
+    text-decoration: underline 0.2em rgba(255, 255, 255, 0);
+    transition: text-decoration-color 500ms;
+    display: block;
+    margin: 0;
+      
 }
 
 .header {
@@ -44,7 +52,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #3829ffd9;
+    background-color: #012626;
     align-items: center;
 }
 
@@ -61,7 +69,7 @@ a {
 }
 .container {
     display: flex;
-    border: 3px solid #3829ffd9;
+    border: 3px solid #012626;
     background-color: white;
     max-width: 800px;
     border-radius: 10px;
@@ -106,15 +114,17 @@ a {
 .new-back {
     margin: 0;
     padding: 50px;
-    background-color: #3829ffd9;
+    background-color: #027368;
 }
 
 .cards {
     margin: 20px;
     background-color: whitesmoke;
-    border: 3px hidden #3829ffd9;
+    border: 3px solid #012626;
     max-width: 240px;
     flex-direction: column;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.5);
+    transition: all .2s ease-in-out;
 }
 .cards img {
     display: flex;
@@ -122,8 +132,9 @@ a {
     height: 200px;
     border-radius: 50%;
     overflow: hidden;
-    border: 2px solid #3829ffd9;
+    border: 2px solid #01403A;
     margin: 10px;
+    transition: all .5s ease-in-out;
 }
 
 .cards .text {
@@ -147,11 +158,12 @@ a {
 }
 
 footer {
-    background-color: darkgray;
+    background-color: #012626;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding:50px;
+    color: whitesmoke
 }
 
 .footer h4{
@@ -163,4 +175,21 @@ footer {
     flex-direction: column;
     align-items: center;
     
+}
+
+li a:hover {
+    text-decoration-color: rgba(255, 255, 255, 1);
+}
+
+.cards:hover {
+    transform: scale(1.1)
+}
+
+.cards img:hover{
+    border-radius: 10%;
+    
+}
+
+button:hover {
+    transform: scale(.9)
 }
