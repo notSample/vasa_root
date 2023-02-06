@@ -1,9 +1,161 @@
 /* styles.css */
 * {
-    background-color: gray;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
-p {
+body {
+    margin: 0;
+    background-color: #eee;
+    height: 100vh;
+    background-origin: border-box;
+}
+
+ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    gap: 20px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    border: 1px solid #3829ffd9;
+    border-radius: 10%;
+    background-color: #3829ffd9;
     color: whitesmoke;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+    width: 100px;
+    height: 35px;
+}
+
+.header {
+    color: whitesmoke;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #3829ffd9;
+    align-items: center;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+.container {
+    display: flex;
+    border: 3px solid #3829ffd9;
+    background-color: white;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.description {
+    padding-left: 16px;
+    flex: 1;
+}
+
+.description .button {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.image {
+    flex: 1;
+}
+
+.image, .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px 20px 20px 0px;
+}
+
+.deck {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 32px;
+}
+
+.new-back {
+    margin: 0;
+    padding: 50px;
+    background-color: #3829ffd9;
+}
+
+.cards {
+    margin: 20px;
+    background-color: whitesmoke;
+    border: 3px hidden #3829ffd9;
+    max-width: 240px;
+    flex-direction: column;
+}
+.cards img {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #3829ffd9;
+    margin: 10px;
+}
+
+.cards .text {
+    padding: 10px;
+}
+
+.testimonials {
+    font-size: 28px;
+    color: rgba(0, 0, 0, 0.65);
+    font-style: italic;
+    margin: 25px;
+}
+
+.hype {
+    padding: 50px;
+}
+
+.hype .text {
+    text-align: right;
+    font-weight: 700;
+}
+
+footer {
+    background-color: darkgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:50px;
+}
+
+.footer h4{
+    margin-bottom: 5px;
+}
+
+.footer.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
