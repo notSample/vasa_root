@@ -34,6 +34,7 @@ button {
     font-weight: 800;
     margin: 16px 0;
     transition: all .3s ease-in-out;
+    cursor: pointer;
 }
 
 a {
@@ -43,7 +44,6 @@ a {
     transition: text-decoration-color 500ms;
     display: block;
     margin: 0;
-      
 }
 
 .header {
@@ -124,7 +124,7 @@ a {
     max-width: 240px;
     flex-direction: column;
     box-shadow: 2px 4px 16px rgba(0,0,0,.5);
-    transition: all .2s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 .cards img {
     display: flex;
@@ -163,7 +163,8 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding:50px;
-    color: whitesmoke
+    color: whitesmoke;
+    margin-bottom: 20px;
 }
 
 .footer h4{
@@ -177,6 +178,20 @@ footer {
     
 }
 
+.form-input {
+    display: flex;
+    align-items: baseline;
+}
+
+input {
+    padding: .8rem 1rem;
+    border-radius: 5%;
+    outline: none;
+    border: .1rem solid #d1d1d1;
+    font-size: .7rem;
+    margin-right: 10px;
+}
+
 li a:hover {
     text-decoration-color: rgba(255, 255, 255, 1);
 }
@@ -185,11 +200,11 @@ li a:hover {
     transform: scale(1.1)
 }
 
-.cards img:hover{
+.cards:hover img{
     border-radius: 10%;
     
 }
 
 button:hover {
-    transform: scale(.9)
+    transform: scale(.95)
 }
